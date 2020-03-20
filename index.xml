@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Blog</title>
+    <link>http://coderzh.github.io/</link>
+    <description>Recent content on My Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 02 Mar 2020 16:47:09 +0800</lastBuildDate>
+    
+	<atom:link href="http://coderzh.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HTTP知识点</title>
+      <link>http://coderzh.github.io/post/http%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9/</link>
+      <pubDate>Mon, 02 Mar 2020 16:47:09 +0800</pubDate>
+      
+      <guid>http://coderzh.github.io/post/http%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9/</guid>
+      <description>内容提要  这一章主要介绍了什么是http以及http是干嘛的，以及与之有关的相关概念，当然了这些概念都是概览式的介绍一些。所以我将采用问答式的方式描述这一章！  Q:http是干嘛的？
+A:HTTP协议：超文本传输协议，在互联网上要传输的网页，数据等都要遵守这个协议（请求-响应模型），http是数据传输协议（超文本传输协议），用来沟通客户端和服务器的!
+Q:什么是HTTP请求-响应部分？
+ 请求部分：   请求行（请求方法 链接 协议） 请求头 HOST：主机 user-agent=告诉服务器我们的请求平台与使用的浏览器 Accept：用于指定客户端能接收那些信息 Accept-language：告诉服务器我们浏览器可以识别的语音 请求体：约定了用户表单数据向服务端传输的格式  响应部分：   响应行（协议 状态码 文字描述） 常见状态码 2xx：成功 3xx：重定向 4xx：客户端错误 5xx：服务端错误 响应头 Date:响应时间 Content-type:响应类型 Content-length：响应长度 server：服务器 响应体：省略  Q:http与https的区别？
+ 地址栏开头不同 前者端口为80，后者为443 前置不安全，不加密，无证书，后者则全部相反  Q:什么是资源？
+A:记住一句话，网络上的一切内容皆资源，无论是静态文件，还是动态生成的代码等！
+Q:什么是媒体类型？
+A:其实就是一种数据类型标记，用来告诉接收端，接收到的数据是什么类型，让接收端知道怎么才能处理该文件！常见标记方式就是MIME，MIME描述了文件的主要类型以及特定子类型，例如：&amp;ldquo;Content-Type&amp;rdquo;:&amp;ldquo;text/html&amp;rdquo;，其中text描述的文件的主要类型是文本，而其特定类型是html文档！
+Q:怎么理解URI以及它的子集？
+A:首先URI从其概念来说是统一资源标识符，它的作用就是在网络上唯一确定一个资源，就好比，在中国，身份证能唯一确定一个人一样！知道身份证号，就一定能确定一个人姓甚名谁一样！它有两个子集：URL(统一资源定位符)和URN(统一资源名)，首先不特别声明，我们所说的URI就是指URL，URL是跟资源其在网络上的位置有关！而URN是指资源跟其名字有关，URN是未来的趋势，不过貌似具体实施现在还在商讨中！所以短时间之内URN难以取代URL！
+Q:什么是事务？
+A:说白了事务就是“一次http链接（不包括tcp/ip连接，只包括一次http报文发送与接收）”的整个过程，由请求命令和响应结果组成！中间数据格式是http报文。我们平常打开一个网站，里面包括很多事务！如：请求网页文档、请求某个logo图片及请求某个视频等！
+Q:方法指什么？
+A:方法就是客户端向服务器发起的请求命令！常见方法有：get、post、delete、put、head！
+Q:状态码有什么用？
+A:状态码对程序有用，便于程序进行相关控制！原因短语对人有用！
+Q:简单介绍一些报文！
+A:首先报文是http协议一种纯文本的数据格式，分为请求报文和响应报文，两种报文都具有类似的结构，分别由三个部分构成：起始行、首部、主体，起始行描述报文干了什么！首部描述报文传输的具体细节！主体描述传输的实际内容！
+Q:什么是TCP/IP？跟HTTP有什么关系？
+A:tcp/ip是全世界的计算机和网络设备常用的层次化分组交换网络协议集！简单的说，http协议是一个应用层协议，位于tcp/ip协议的上一层，tcp/ip协议的主要作用就是过滤掉每个计算机的差异性，隐藏相关弱点，使得对于http协议来说提供的都是“相同的”接口！
+Q:在一次网络请求中，分别经历那些过程？
+A:步骤如下：
+  (a)浏览器从url中解析处服务器的主机名；
+    (b)浏览器将服务器的主机名转换成服务器的的ip地址；（可能经过去dns服务器查询）</description>
+    </item>
+    
+    <item>
+      <title>Maven使用教程</title>
+      <link>http://coderzh.github.io/post/maven%E7%9F%A5%E8%AF%86%E7%82%B9/</link>
+      <pubDate>Sun, 22 Sep 2019 19:47:09 +0800</pubDate>
+      
+      <guid>http://coderzh.github.io/post/maven%E7%9F%A5%E8%AF%86%E7%82%B9/</guid>
+      <description>使用maven做什么？  构建不依赖于IDE的标准化项目（导入IDE只需要以maven项目导入即可） 目录结构统一并且简单，约定大于配置，被其他构建工具以及项目广泛采用 统一对项目依赖的jar包进行管理，明确jar包依赖以及对应的版本自动下载等（ Maven是跨平台的项目管理工具。主要服务于基于Java平台的项目构建，依赖管理和项目信息管理。  什么是maven仓库？  Maven在某个统一的位置存储所有项目的共享的构件，这个统一的位置，就称之为仓库。（仓库就是存放依赖和插件的地方） 本地仓库：就是Maven在本机存储构件的地方。maven的本地仓库，在安装maven后并不会创建，它是在第一次执行maven命令的时候才被创建。maven本地仓库的默认位置：在用户的目录下都只有一个.m2/repository/的仓库目录；可以修改。 中央仓库：包含了绝大多数流行的开源Java构件，以及源码、作者信息、SCM、信息、许可证信息等。开源的Java项目依赖的构件都可以在这里下载到。 中央仓库的地址：http://repo1.maven.org/maven2/ 私服：是一种特殊的远程仓库，它是架设在局域网内的仓库。  什么是maven坐标？  Maven世界拥有大量构件，需要找一个用来唯一标识一个构建的统一规范 拥有了统一规范，就可以把查找工作交给机器  Maven的项目的主要组成？  groupId：定义当前Maven项目隶属项目、组织 artifactId：定义实际项目中的一个模块 version：定义当前项目的当前版本 packaging：定义该项目的打包方式（pom/jar/war，默认为jar） groupId、artifactId、version简称为GAV。  Maven的项目构建流程？ maven的使用   下载
+进入官网选择download菜单进入下载页面
+tar.gz文件对应linux系统
+zip文件对应windows系统
+  安装
+解压即可使用
+解压maven压缩包“apache-maven-3.5.2.bin.zip”到一个路径（尽量编码路径中不要包含中文）
+   bin：含有mvn运行的脚本 boot：含有plexus-classworlds类加载器框架 lib：含有Maven运行时所需要的java类库 conf：含有settings.xml配置文件 settings.xml 中默认的用户库: ${user.home}/.m2/repository[通过maven下载的jar包都会存储到此仓库中]  添加环境变量
+MAVEN_HOME : E:\maven\apache-maven-3.5.2-bin（注意：配置为你自己的maven路径） 在Path中追加: %MAVEN_HOME%\bin 验证是否安装成功
+打开 cmd 输入：mvn -version  配置本地仓库
+Maven的默认本地仓库在：${user.home}/.m2/repository,这地址可以在settings.xml中修改指定自定义的仓库路径。   【自定义仓库路径】 找到${maven_home}/conf/settings.xml文件，修改如下： 需要注意的是上图中的自定义路径必须存在。repository是本地仓库，也即本地下载的jar存放路径。  </description>
+    </item>
+    
+    <item>
+      <title>MySQL知识点</title>
+      <link>http://coderzh.github.io/post/mysql%E7%9F%A5%E8%AF%86%E7%82%B9/</link>
+      <pubDate>Tue, 13 Aug 2019 19:47:09 +0800</pubDate>
+      
+      <guid>http://coderzh.github.io/post/mysql%E7%9F%A5%E8%AF%86%E7%82%B9/</guid>
+      <description>什么是MySQL？ MySQL 是一种关系型数据库，在Java企业级开发中非常常用，因为 MySQL 是开源免费的，并且方便扩展。阿里巴巴数据库系统也大量用到了 MySQL，因此它的稳定性是有保障的。MySQL是开放源代码的，因此任何人都可以在 GPL(General Public License) 的许可下下载并根据个性化的需要对其进行修改。MySQL的默认端口号是3306。
+MyISAM和InnoDB区别？   MyISAM是MySQL的默认数据库引擎（5.5版之前）。虽然性能极佳，而且提供了大量的特性，包括全文索引、压缩、空间函数等，但MyISAM不支持事务和行级锁，而且最大的缺陷就是崩溃后无法安全恢复。不过，5.5版本之后，MySQL引入了InnoDB（事务性数据库引擎），MySQL 5.5版本后默认的存储引擎为InnoDB。
+  大多数时候我们使用的都是 InnoDB 存储引擎，但是在某些情况下使用 MyISAM 也是合适的比如读密集的情况下。（如果你不介意 MyISAM 崩溃恢复问题的话）。
+   MyISAM 只有表级锁(table-level locking)，而InnoDB 支持行级锁(row-level locking)和表级锁,默认为行级锁。 MyISAM 强调的是性能，每次查询具有原子性,其执行速度比InnoDB类型更快，但是不提供事务支持。但是InnoDB 提供事务支持事务，外部键等高级数据库功能。 具有事务(commit)、回滚(rollback)和崩溃修复能力(crash recovery capabilities)的事务安全(transaction-safe (ACID compliant))型表。 MyISAM不支持外键，而InnoDB支持外键。  什么是索引？  MySQL索引使用的数据结构主要有BTree索引 和 哈希索引 。对于哈希索引来说，底层的数据结构就是哈希表，因此在绝大多数需求为单条记录查询的时候，可以选择哈希索引，查询性能最快；其余大部分场景，建议选择BTree索引。 MyISAM: B+Tree叶节点的data域存放的是数据记录的地址。在索引检索的时候，首先按照B+Tree搜索算法搜索索引，如果指定的Key存在，则取出其 data 域的值，然后以 data 域的值为地址读取相应的数据记录。这被称为“非聚簇索引”。 InnoDB: 其数据文件本身就是索引文件。相比MyISAM，索引文件和数据文件是分离的，其表数据文件本身就是按B+Tree组织的一个索引结构，树的叶节点data域保存了完整的数据记录。这个索引的key是数据表的主键，因此InnoDB表数据文件本身就是主索引。这被称为“聚簇索引（或聚集索引）”。而其余的索引都作为辅助索引，辅助索引的data域存储相应记录主键的值而不是地址，这也是和MyISAM不同的地方。在根据主索引搜索时，直接找到key所在的节点即可取出数据；在根据辅助索引查找时，则需要先取出主键的值，再走一遍主索引。 因此，在设计表的时候，不建议使用过长的字段作为主键，也不建议使用非单调的字段作为主键，这样会造成主索引频繁分裂。 PS：整理自《Java工程师修炼之道》  什么是事务？  事务是逻辑上的一组操作，要么都执行，要么都不执行。     事务最经典也经常被拿出来说例子就是转账了。假如小明要给小红转账1000元，这个转账会涉及到两个关键操作就是：将小明的余额减少1000元，将小红的余额增加1000元。万一在这两个操作之间突然出现错误比如银行系统崩溃，导致小明余额减少而小红的余额没有增加，这样就不对了。事务就是保证这两个关键操作要么都成功，要么都要失败。    什么是事务的四大特性？  原子性（Atomicity）： 事务是最小的执行单位，不允许分割。事务的原子性确保动作要么全部完成，要么完全不起作用； 一致性（Consistency）： 执行事务前后，数据保持一致，多个事务对同一个数据读取的结果是相同的； 隔离性（Isolation）： 并发访问数据库时，一个用户的事务不被其他事务所干扰，各并发事务之间数据库是独立的； 持久性（Durability）： 一个事务被提交之后。它对数据库中数据的改变是持久的，即使数据库发生故障也不应该对其有任何影响。  并发事务带来哪些问题?</description>
+    </item>
+    
+    <item>
+      <title>Git使用教程</title>
+      <link>http://coderzh.github.io/post/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Sat, 29 Jun 2019 19:47:09 +0800</pubDate>
+      
+      <guid>http://coderzh.github.io/post/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</guid>
+      <description>内容提要  这一章主要介绍了什么是git以及git是干嘛的，以及与之有关的相关概念，当然了这些概念都是概览式的介绍一些。所以我将采用问答式的方式描述这一章！  Q:git是什么？
+A:Git是目前世界上最先进的分布式版本控制系统，可以使用它来对系统代码进行控制，可以进行系统性的代码开发，提高项目人员的开发效率。
+Q:怎么windows上如何安装Git？
+  需要从网上下载一个，然后进行默认安装即可。安装完成后，在开始菜单里面找到 &amp;ldquo;Git &amp;ndash;&amp;gt; Git Bash&amp;rdquo;,　会弹出一个类似的命令窗口的东西，就说明Git安装成功。
+  因为Git是分布式版本控制系统，所以需要填写用户名和邮箱作为一个标识。
+  注意：git config &amp;ndash;global 参数，有了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然你也可以对某个仓库指定的不同的用户名和邮箱。
+  Q:如何创建仓库？
+ 什么是版本库？版本库又名仓库，英文名repository,你可以简单的理解一个目录，这个目录里面的所有文件都可以被Git管理起来，每个文件的修改，删除，Git都能跟踪，以便任何时刻都可以追踪历史，或者在将来某个时刻还可以将文件”还原”。所以创建一个版本库也非常简单，如下我是D盘 –&amp;gt; www下 目录下新建一个testgit版本库。 通过命令 git init 把这个目录变成git可以管理的仓库 这时候你当前testgit目录下会多了一个.git的目录，这个目录是Git来跟踪管理版本的，没事千万不要手动乱改这个目录里面的文件，否则，会把git仓库给破坏了  Q:如何把文件添加到仓库中？
+A:记首先要明确下，所有的版本控制系统，只能跟踪文本文件的改动，比如txt文件，网页，所有程序的代码等，Git也不列外，版本控制系统可以告诉你每次的改动，但是图片，视频这些二进制文件，虽能也能由版本控制系统管理，但没法跟踪文件的变化，只能把二进制文件每次改动串起来，也就是知道图片从1kb变成2kb，但是到底改了啥，版本控制也不知道。
+ 使用 git add 文件名，将文件添加到暂存区中 使用 git commit -m&amp;quot;备注&amp;rdquo; 。告诉Git把文件提交到仓库。  Q:如何进行版本回退？
+ git log查看提交记录，找到对应的版本号 git reset &amp;ndash;hard 版本号 回退到这个版本  Q:怎么理解工作区与暂存区的区别？
+  工作区：就是你在电脑上看到的目录，比如目录下testgit里的文件(.git隐藏目录版本库除外)。或者以后需要再新建的目录文件等等都属于工作区范畴。
+  版本库(Repository)：工作区有一个隐藏目录.git,这个不属于工作区，这是版本库。其中版本库里面存了很多东西，其中最重要的就是stage(暂存区)，还有Git为我们自动创建了第一个分支master,以及指向master的一个指针HEAD。！
+  Q:什么是远程仓库？</description>
+    </item>
+    
+  </channel>
+</rss>
